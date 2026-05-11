@@ -1,10 +1,10 @@
 <section class="card-container">
     <aside class="tag-plan">
-        <h3>Plano avançado</h3>
+        <h3>Plano {{ plan.info.type }}</h3>
     </aside>
     <aside class="value-container">
-        <h1>R$800,00</h1>
+        <h1>R${{ plan.info.value }},00</h1>
         <span>Por mês</span>
     </aside>
-    <app-button-purple></app-button-purple>
+    <app-button></app-button>
 </section>

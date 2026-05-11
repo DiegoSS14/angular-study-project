@@ -1,16 +1,19 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { CardPurpleComponent } from '../card-purple/card.component';
+import { CardComponent } from '../card-comp/card.component';
+import { ButtonCalcelComponent } from '../button-calcel/button-calcel.component';
 
 
 
 @NgModule({
   imports: [
     CommonModule,
-    CardPurpleComponent
+    CardComponent,
+    ButtonCalcelComponent
   ],
   exports: [
-    CardPurpleComponent
+    CardComponent, 
+    ButtonCalcelComponent
   ]
 })
 export class CardModule { }

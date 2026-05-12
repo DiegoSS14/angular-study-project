@@ -8,7 +8,7 @@ import { Component } from '@angular/core';
   // É possível estilizar um botão diretamente no componente .ts
   styles: [
     `
-    @import "_variables";
+    @import "variables";
     .button{
     display: flex;
     justify-content: center;

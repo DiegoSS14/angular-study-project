@@ -1,3 +1,5 @@
+@import "../../styles/variables";
+
 .tag-plan {
     display: flex;
     align-items: center;
@@ -26,7 +28,7 @@
     align-items: start;
     justify-content: center;
     flex-direction: column;
-    background-color: rgb(153, 0, 255);
+    background-color: $purple;
     padding: 20px 20px;
     height: fit-content;
     width: 100%;

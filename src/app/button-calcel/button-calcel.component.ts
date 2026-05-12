@@ -7,7 +7,8 @@ import { Component } from '@angular/core';
   // styleUrl: './button-calcel.component.scss',
   // É possível estilizar um botão diretamente no componente .ts
   styles: [
-    `   
+    `
+    @import "_variables";
     .button{
     display: flex;
     justify-content: center;
@@ -20,7 +21,7 @@ import { Component } from '@angular/core';
     font-weight: 600;
     font-size: 16px;
     color: white;
-    background-color: rgb(237, 16, 16);
+    background-color: $red;
 }
     `
   ]

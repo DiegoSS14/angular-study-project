@@ -1,3 +1,5 @@
+@import "_variables";
+
 .button{
     display: flex;
     justify-content: center;
@@ -10,5 +12,5 @@
     font-weight: 600;
     font-size: 16px;
     color: white;
-    background-color: rgb(218, 16, 237);
+    background-color: $purple2;
 }

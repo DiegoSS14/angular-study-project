@@ -1,5 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, ViewEncapsulation } from '@angular/core';
 import { ButtonComponent } from '../button/button.component';
+import { MatSlideToggle } from "@angular/material/slide-toggle";
 
 interface IPlan {
   info: Iinfo
@@ -11,9 +12,11 @@ interface Iinfo {
 
 @Component({
   selector: 'app-card',
-  imports: [ButtonComponent],
+  imports: [ButtonComponent, MatSlideToggle],
   templateUrl: './card.component.html',
-  styleUrl: './card.component.scss'
+  styleUrl: './card.component.scss',
+  // Com essa propriedade consigo tornar o CSS desse componente global
+  encapsulation: ViewEncapsulation.None
 })
 export class CardComponent {
   plan = {

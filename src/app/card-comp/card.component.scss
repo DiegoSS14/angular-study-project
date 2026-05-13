@@ -1,5 +1,10 @@
 @import "variables";
 
+// Teste do ViewEncapsulation.None
+*{
+    font-family: serif !important;
+}
+
 .tag-plan {
     display: flex;
     align-items: center;

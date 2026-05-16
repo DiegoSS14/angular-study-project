@@ -1,15 +1,48 @@
-<div style="display: flex; flex-direction: column; align-items: center; gap: 20px;">
+<div style="display: flex; flex-direction: column; gap: 20px;">
+    
+    <h2>CSS Style Binding</h2>
+    <div style="display: flex; gap: 4px;">
     <button 
-        style="padding: 10px 20px; font-size: 16px; transition: all 0.3s ease; border-radius: 5px;" 
-        (click)="onButtonClick()"
-        [style.backgroundColor]="bgColor"
+    style="padding: 10px 20px; font-size: 16px; transition: all 0.3s ease; border-radius: 5px;" 
+    (click)="onButtonClick()"
+    [style.backgroundColor]="bgColor"
         [style.color]="textColor"
     >Click me!</button>
     
     <button 
-        style="padding: 10px 20px; font-size: 16px; transition: all 0.3s ease; border-radius: 5px;"
-        (click)="onButtonClick2()"
-        [style]="buttonStyle"
+    style="padding: 10px 20px; font-size: 16px; transition: all 0.3s ease; border-radius: 5px;"
+    (click)="onButtonClick2()"
+    [style]="buttonStyle"
     >Click me!</button>
+    </div>
+
+    <h2>CSS Class Binding</h2>
+
+    <div style="display: flex; gap: 4px;">
+        <button 
+        style="padding: 10px 20px; font-size: 16px; transition: all 0.3s ease; border-radius: 5px;"
+        [class.green-button]="true"
+        (click)="onclickGreen()"
+        >Green</button>
+        <button 
+        style="padding: 10px 20px; font-size: 16px; transition: all 0.3s ease; border-radius: 5px;"
+        [class.red-button]="true"
+        (click)="onclickRed()"
+        >Red</button>
+
+        <!-- Duas formas de utilizar o CSS Binding -->
+        <button 
+        style="margin-left: 10px; padding: 10px 20px; font-size: 16px; transition: all 0.3s ease; border-radius: 5px;"
+        [class.red-button]="isRed"
+        [class.green-button]="isGreen"
+        >Red</button>
+        <button 
+        style="padding: 10px 20px; font-size: 16px; transition: all 0.3s ease; border-radius: 5px;"
+        [class]="{
+            'red-button': isRed,
+            'green-button': isGreen
+        }"
+        >Red</button>
+    </div>
 
 </div>

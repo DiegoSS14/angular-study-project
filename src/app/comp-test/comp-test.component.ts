@@ -9,6 +9,10 @@ import { Component } from '@angular/core';
 export class CompTestComponent {
   bgColor = 'lightblue';
   textColor = 'black';
+  
+  // Css Binding
+  isRed = true
+  isGreen = false
 
   buttonStyle = {
     width: '150px',
@@ -16,7 +20,7 @@ export class CompTestComponent {
     color: this.textColor,
     fontWeight: 'normal'
   }
-  
+
   onButtonClick() {
     this.bgColor = 'orange'
     this.textColor = 'white'
@@ -29,5 +33,17 @@ export class CompTestComponent {
       color: 'white',
       fontWeight: 'bold'
     }
+  }
+
+  // Css Binding
+
+  onclickRed() {
+    this.isRed = true
+    this.isGreen = false
+  }
+  
+  onclickGreen() {
+    this.isGreen = true
+    this.isRed = false
   }
 }

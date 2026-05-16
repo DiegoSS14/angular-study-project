@@ -10,4 +10,15 @@ import { CardModule } from './card/card.module';
 })
 export class AppComponent {
   title = 'componentProject';
+  initialValue = 'Initial value in app';
+  attValue = ''
+  type = 'password';
+
+  onFocus() {
+    this.type = 'text';
+  }
+
+  changeValue(value: string) {
+    this.initialValue = value;
+  }
 }

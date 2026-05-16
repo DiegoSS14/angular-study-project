@@ -1,1 +1,2 @@
-<button class="button">Adquirir</button>
+<button class="button" [attr.title]="title" (click)="onclickTest()">Adquirir</button>
+<button [disabled]="disabled ? true : null">Adquirir</button>

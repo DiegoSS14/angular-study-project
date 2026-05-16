@@ -1,0 +1,15 @@
+<div style="display: flex; flex-direction: column; align-items: center; gap: 20px;">
+    <button 
+        style="padding: 10px 20px; font-size: 16px; transition: all 0.3s ease; border-radius: 5px;" 
+        (click)="onButtonClick()"
+        [style.backgroundColor]="bgColor"
+        [style.color]="textColor"
+    >Click me!</button>
+    
+    <button 
+        style="padding: 10px 20px; font-size: 16px; transition: all 0.3s ease; border-radius: 5px;"
+        (click)="onButtonClick2()"
+        [style]="buttonStyle"
+    >Click me!</button>
+
+</div>

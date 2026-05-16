@@ -11,5 +11,11 @@ import { Component } from '@angular/core';
   styleUrl: './button.component.scss'
 })
 export class ButtonComponent {
+  title = "TESTEEE"
+  disabled = true
 
+  onclickTest() {
+    this.title = "O teste deu bom!"
+    this.disabled = !this.disabled
+  }
 }
